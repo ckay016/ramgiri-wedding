@@ -39,7 +39,9 @@ export function Countdown({ target }: { target: string }) {
       {(remaining === null ? UNITS.map(([label]) => ({ label, value: null })) : split(remaining)).map(
         ({ label, value }) => (
           <div className="countdown-unit" key={label}>
-            <span className="countdown-number">{value === null ? "—" : String(value).padStart(2, "0")}</span>
+            <span className="countdown-number" suppressHydrationWarning>
+              {value === null ? "—" : String(value).padStart(2, "0")}
+            </span>
             <span className="countdown-label">{label}</span>
           </div>
         ),
