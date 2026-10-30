@@ -13,7 +13,7 @@ export function Hero() {
         <div className="blessing-wrap">
           <Halo className="blessing-halo" />
           <Image
-            src="/images/blessing.jpg"
+            src="/images/blessing.svg"
             alt="Traditional wedding blessing symbol"
             width={240}
             height={240}
