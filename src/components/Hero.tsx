@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { couple, invitation, mainEvent } from "@/content/wedding";
 import { clockLabel, fullDate } from "@/lib/dates";
-import { ArrowRight, Halo } from "./Icons";
+import { Halo } from "./Icons";
 
 export function Hero() {
   return (

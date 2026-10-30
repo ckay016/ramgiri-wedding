@@ -561,7 +561,7 @@ main:focus {
   align-items: center;
   gap: 7px;
   min-height: 44px;
-  padding: 0;
+  padding: 4px;
   border: 0;
   background: none;
   color: var(--accent);
@@ -1282,6 +1282,12 @@ textarea::placeholder {
   }
 }
 
+@media (min-width: 768px) and (max-width: 900px) {
+  .event-list {
+    grid-template-columns: minmax(0, 450px);
+  }
+}
+
 @media (max-width: 1050px) {
   .section-shell,
   .site-header {
@@ -1298,37 +1304,16 @@ textarea::placeholder {
   }
 
   .event-list {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 36px;
+    grid-template-columns: minmax(0, 600px);
+    gap: 32px;
   }
 
   .event-card {
-    display: grid;
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
-    column-gap: 40px;
-    padding: 0 0 36px;
-  }
-
-  .event-card + .event-card {
-    padding: 40px 0 36px;
-    border-top: 1px solid var(--line);
-    border-left: 0;
-  }
-
-  .event-art {
-    grid-area: 1 / 1 / 4;
-    align-self: center;
-    margin: 0;
-  }
-
-  .event-story,
-  .event-venue,
-  .event-links {
-    grid-column: 2;
+    padding: 24px;
   }
 
   .event-story h3 {
-    font-size: 36px;
+    font-size: clamp(32px, 4vw, 40px);
   }
 
   .event-venue {
@@ -1466,9 +1451,14 @@ textarea::placeholder {
     margin-bottom: 32px;
   }
 
-  .event-card,
-  .event-card + .event-card {
-    display: flex;
+  .event-list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .event-card {
+    padding: 20px;
+    border-radius: 6px;
   }
 
   .event-art {
@@ -1476,7 +1466,27 @@ textarea::placeholder {
   }
 
   .event-story h3 {
-    font-size: 32px;
+    font-size: clamp(28px, 7vw, 36px);
+  }
+
+  .event-region {
+    font-size: 0.9375rem;
+  }
+
+  .event-time {
+    font-size: 0.9375rem;
+  }
+
+  .event-meal {
+    font-size: 0.9375rem;
+  }
+
+  .event-venue h4 {
+    font-size: 0.9375rem;
+  }
+
+  .event-venue address {
+    font-size: 0.9375rem;
   }
 
   .rsvp-section {
@@ -1539,6 +1549,31 @@ textarea::placeholder {
 
   .footer-names {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 374px) {
+  .section-shell,
+  .site-header {
+    width: calc(100% - 32px);
+  }
+
+  .event-card {
+    padding: 16px;
+  }
+
+  .event-story h3 {
+    font-size: clamp(24px, 8vw, 32px);
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 11vw, 56px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1050px) and (orientation: landscape) {
+  .event-list {
+    grid-template-columns: repeat(2, minmax(0, 450px));
   }
 }
 
