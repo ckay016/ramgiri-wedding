@@ -564,20 +564,19 @@ main:focus {
   padding: 4px;
   border: 0;
   background: none;
-  color: var(--accent);
+  color: currentColor;
   font-size: var(--text-ui);
   cursor: pointer;
 }
 
 .text-link:hover {
-  color: var(--accent-hover);
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  color: var(--ink);
+  text-decoration: none;
 }
 
 .text-link svg {
-  width: 14px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
 }
 
 .venue-link {
