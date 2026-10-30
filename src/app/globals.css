@@ -257,8 +257,8 @@ main:focus {
 .blessing-art {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  mix-blend-mode: multiply;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .blessing {
@@ -484,8 +484,8 @@ main:focus {
   height: auto;
   aspect-ratio: 3 / 2;
   margin-bottom: 28px;
-  object-fit: contain;
-  mix-blend-mode: multiply;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .event-date {
