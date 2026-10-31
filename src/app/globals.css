@@ -214,25 +214,6 @@ main:focus {
   text-align: center;
 }
 
-.corner-decoration {
-  position: absolute;
-  z-index: 2;
-  pointer-events: none;
-  opacity: 0.7;
-}
-
-.corner-top-left {
-  top: 0;
-  left: 0;
-  transform: rotate(0deg);
-}
-
-.corner-top-right {
-  top: 0;
-  right: 0;
-  transform: scaleX(-1);
-}
-
 .hero-landscape {
   position: absolute;
   inset: -84px 0 0;
@@ -1410,12 +1391,6 @@ textarea::placeholder {
 
   .site-header {
     height: 72px;
-  }
-
-  .corner-decoration {
-    width: 150px;
-    height: auto;
-    opacity: 0.5;
   }
 
   .header-date {
