@@ -15,7 +15,7 @@ export function Hero() {
         <div className="blessing-wrap">
           <Halo className="blessing-halo" />
           <Image
-            src="/images/ganapati.avif"
+            src="/images/ganapati-round.png"
             alt="Lord Ganapati blessing"
             width={240}
             height={240}
