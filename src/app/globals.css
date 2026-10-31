@@ -1576,6 +1576,10 @@ textarea::placeholder {
     padding-top: 52px;
   }
 
+  .footer-landscape {
+    aspect-ratio: 2;
+  }
+
   .countdown-intro h2 {
     font-size: 34px;
   }
