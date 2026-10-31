@@ -7,8 +7,10 @@ export function Hero() {
   return (
     <section className="hero" aria-labelledby="couple-names">
       <div className="hero-landscape" aria-hidden="true">
-        <Image src="/images/hero.svg" alt="" fill priority className="hero-art" sizes="100vw" />
+        <Image src="/images/background.avif" alt="" fill priority className="hero-art" sizes="100vw" />
       </div>
+      <Image src="/images/leaves-design.avif" alt="" width={300} height={300} className="corner-decoration corner-top-left" aria-hidden="true" />
+      <Image src="/images/leaves-design.avif" alt="" width={300} height={300} className="corner-decoration corner-top-right" aria-hidden="true" />
       <div className="hero-content">
         <div className="blessing-wrap">
           <Halo className="blessing-halo" />
