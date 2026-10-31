@@ -577,6 +577,50 @@ main:focus {
   height: 18px;
 }
 
+.event-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 11px 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: var(--text-ui);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  text-decoration: none;
+}
+
+.event-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.event-button-primary {
+  background: #75594b;
+  color: #ffffff;
+  border-color: #75594b;
+}
+
+.event-button-primary:hover {
+  background: #5f4739;
+  border-color: #5f4739;
+}
+
+.event-button-secondary {
+  background: transparent;
+  color: #75594b;
+  border-color: #75594b;
+}
+
+.event-button-secondary:hover {
+  background: #f5f0ea;
+  color: #5f4739;
+  border-color: #5f4739;
+}
+
 .venue-link {
   display: inline-flex;
   align-items: center;

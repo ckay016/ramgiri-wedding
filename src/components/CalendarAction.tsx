@@ -11,7 +11,7 @@ export function CalendarAction({ event }: { event: Celebration }) {
 
   return (
     <>
-      <button type="button" className="text-link calendar-link" onClick={() => dialog.current?.showModal()}>
+      <button type="button" className="event-button event-button-secondary" onClick={() => dialog.current?.showModal()}>
         <CalendarIcon /> Add to calendar
       </button>
       <dialog

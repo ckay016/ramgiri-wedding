@@ -45,7 +45,7 @@ export function Celebrations() {
             </div>
             <div className="event-links">
               <div className="event-actions">
-                <a className="text-link" href={directionsUrl(event)} target="_blank" rel="noreferrer">
+                <a className="event-button event-button-primary" href={directionsUrl(event)} target="_blank" rel="noreferrer">
                   <Pin /> Get directions
                 </a>
                 <CalendarAction event={event} />
