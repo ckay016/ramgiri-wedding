@@ -21,7 +21,7 @@ export function Celebrations() {
               width={600}
               height={400}
               className="event-art"
-              sizes="(max-width: 1050px) 45vw, 360px"
+              sizes="(max-width: 767px) calc(100vw - 84px), (max-width: 1050px) 552px, 444px"
             />
             <div className="event-story">
               <p className="event-date">

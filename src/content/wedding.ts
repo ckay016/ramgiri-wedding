@@ -61,7 +61,7 @@ export const celebrations: Celebration[] = [
       mapsQuery: "Dwaraka Chalama Reddy Function Hall, Gooty Road, Anantapur",
       mapsUrl: "https://maps.app.goo.gl/ip6n9sBemfH3mcCL9?g_st=iw",
     },
-    art: { src: "/images/event-reception.svg", alt: "Elegant wedding reception" },
+    art: { src: "/images/reception.png", alt: "Elegant wedding reception" },
   },
   {
     id: "wedding",
@@ -79,7 +79,7 @@ export const celebrations: Celebration[] = [
       mapsQuery: "Dwaraka Chalama Reddy Function Hall, Gooty Road, Anantapur",
       mapsUrl: "https://maps.app.goo.gl/ip6n9sBemfH3mcCL9?g_st=iw",
     },
-    art: { src: "/images/event-wedding.svg", alt: "Traditional wedding ceremony" },
+    art: { src: "/images/wedding-image.png", alt: "Traditional wedding ceremony" },
   },
 ];
 
